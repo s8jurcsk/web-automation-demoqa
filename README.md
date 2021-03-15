@@ -22,7 +22,7 @@
         * Project SDK: 1.8
         * Project language level: 1.8/8
 * Install plugins - Preferences -> Plugins: `Cucumber for Java`, `Gherkin`
-* Add configuration - Command line: `clean verify`
+* Add configuration -> (+)Maven - Command line: `clean verify`
 ### 2.3. Did it work ?
 * The execution should result in `https://demoqa.com/` being opened in a new Google Chrome Web browser and a scenario failing due to:
 ```
