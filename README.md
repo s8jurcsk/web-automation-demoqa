@@ -26,7 +26,8 @@
 
 3.  Install plugins - Preferences -> Plugins: `Cucumber for Java`, `Gherkin`
 4.  Add configuration - Command line: `clean verify`
-### 3.3. The execution should result in `https://demoqa.com/` being opened in a new Google Chrome Web browser and scenario failing due to:
+### 3.3. Did it work ?
+* The execution should result in `https://demoqa.com/` being opened in a new Google Chrome Web browser and scenario failing due to:
 ```
 [ERROR] Failures: 
 [ERROR]   On page: TextBoxPage, the given element is undefined: EMAIL_FIELD
