@@ -1,6 +1,6 @@
 # Web-automation-demoqa
 
-## 1. Requirements:<br>
+## 1. Requirements
 1. Java 8
 2. maven
 3. Google Chrome - Web browser
