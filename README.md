@@ -4,13 +4,11 @@
 ### 1.1. Mandatory
 * Java 8
 * maven
-* Google Chrome - Web browser
-
+* Google Chrome Web browser
 ### 1.2. Optional/Nice to have/Your choice
 * IntelliJ IDEA
 * Visual Studio Code + Terminal (bash, etc..)
 * Any source-code editor of your choice that you feel comfortable with writing Java.
-
 ## 2. How to execute
 ### 2.1. On macOS/Linux:
 * cd into: `web-automation-demoqa`
@@ -23,7 +21,6 @@
       * Project settings -> Project:
         * Project SDK: 1.8
         * Project language level: 1.8/8
-
 * Install plugins - Preferences -> Plugins: `Cucumber for Java`, `Gherkin`
 * Add configuration - Command line: `clean verify`
 ### 2.3. Did it work ?
