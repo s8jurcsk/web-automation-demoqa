@@ -16,9 +16,8 @@ public class SelectMenuPage extends WidgetsPage{
   public static By SELECT_VALUE;
   public static By SELECT_ONE;
   public static By OLD_STYLE_SELECT_MENU;
-  public static By MULTISELECT_DROP_DOWN;
   // Field containing selected values. Might need an xpath selector
-  public static By MULTISELECT_DROP_DOWN_VALUES;
+  public static By MULTISELECT_DROP_DOWN_VALUES = xpath("(//input[contains(@id, 'react-select')])[3]");
   public static By VOLVO;
   public static By SAAB;
   public static By OPEL;

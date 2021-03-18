@@ -10,15 +10,15 @@ import net.thucydides.core.annotations.DefaultUrl;
 @DefaultUrl("/auto-complete")
 public class AutoCompletePage extends WidgetsPage{
   // Locators ----------------------------------------------------------------------------------------------------------
-  public static By AUTO_COMPLETE_TITLE;
+  public static By AUTO_COMPLETE_TITLE = text("Text Box");
   // Element to which you would send keystrokes
-  public static By MULTIPLE_COLOR_FIELD;
+  public static By MULTIPLE_COLOR_FIELD = css("input[id='autoCompleteMultipleInput']");
   // Element containing the information about actual values
-  public static By MULTIPLE_COLOR_CONTAINER;
+  public static By MULTIPLE_COLOR_CONTAINER = id("autoCompleteMultipleContainer");
   // Element to which you would send keystrokes
-  public static By SINGLE_COLOR_FIELD;
+  public static By SINGLE_COLOR_FIELD = css("input[id='autoCompleteSingleInput']");
   // Element containing the information about actual values
-  public static By SINGLE_COLOR_CONTAINER;
+  public static By SINGLE_COLOR_CONTAINER = id("autoCompleteSingleContainer");
   // Public methods ----------------------------------------------------------------------------------------------------
   public void waitForPageToLoad() {
     getElement(AUTO_COMPLETE_TITLE).waitUntilPresent();
@@ -31,7 +31,9 @@ public class AutoCompletePage extends WidgetsPage{
       case "MULTIPLE_COLOR_FIELD":
         // Create a logic that would input the value into given fields, and press (or send) the enter key (Keys.ENTER)
         WebElementFacade e = getElement(elementName);
-        
+        getElement(elementName).click();
+        getElement(elementName).sendKeys(value);
+        getElement(elementName).sendKeys(Keys.ENTER);
         break;
       default:
         super.setElementValueTo(elementName, value);
