@@ -28,22 +28,18 @@ public class SliderPage extends WidgetsPage {
         int sliderValue = 0;
         // Converting the required value given in parameter to integer
         int intOfValue = Integer.valueOf(value);
-
-        // TODO: Implement a logic that would move the slider to the left (Keys.LEFT) or right (Keys.RIGHT),
-        // based on it's current possition, and the value given in the parameter.
-        getElement(elementName).click();
-        getElement(elementName).sendKeys(value);
-        if(sliderValue > intOfValue){
-          getElement(elementName).sendKeys(Keys.LEFT);
-        }
-        else{
-          getElement(elementName).sendKeys(Keys.RIGHT);
-        }
-
-
-  
-        // sliderValue - current value of slider ball
         sliderValue = Integer.valueOf(getElement(SLIDER_BALL).getValue());
+        while(sliderValue != intOfValue) {
+          if (sliderValue > intOfValue) {
+            getElement(elementName).sendKeys(Keys.LEFT);
+            sliderValue--;
+          } else if (sliderValue < intOfValue) {
+            getElement(elementName).sendKeys(Keys.RIGHT);
+            sliderValue++;
+          }
+        }
+
+
 
         break;
       default:

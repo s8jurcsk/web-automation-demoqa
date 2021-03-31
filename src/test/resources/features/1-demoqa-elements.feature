@@ -64,3 +64,15 @@ Feature: DemoQA - Elements page
     Then "Right click message" should be "visible"
     When I click "Click me button"
     Then "Dynamic click message" should be "visible"
+
+@run
+   Scenario: Links
+     When I click "Links option"
+     And  I click "Created Link"
+     Then "Link Message" should be "visible"
+     And  I click "Moved Link"
+     Then "Link Message" should be "visible"
+     And  I click "Forbidden Link"
+     Then "Link Message" should be "visible"
+     And  I click "Not Found Link"
+     Then "Link Message" should be "visible"

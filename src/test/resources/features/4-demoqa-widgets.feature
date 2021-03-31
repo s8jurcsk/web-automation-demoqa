@@ -42,7 +42,8 @@ Feature: DemoQA - Widgets
     Then I see "Select date and time value" with the following data:
       | Value                  |
       | March 28, 2018 9:00 PM |
-@run
+
+
   Scenario: Slider
     When I click "Slider option"
     And  I set "Slider ball" to "10"
@@ -71,6 +72,7 @@ Feature: DemoQA - Widgets
     When I click "What tab"
     Then "Content" should contain "unknown printer took a galley"
 
+
   Scenario: Tool tips
     When I click "Tool Tips option"
     And  I hover over "Hover me to see button"
@@ -81,6 +83,7 @@ Feature: DemoQA - Widgets
     Then "Contrary Tool tip" should contain "You hovered over the Contrary"
     When I hover over "Section 1.10.32"
     Then "Section Tool tip" should contain "You hovered over the 1.10.32"
+
 
   Scenario: Menu
     When I click "Menu option"
@@ -93,6 +96,7 @@ Feature: DemoQA - Widgets
     When I hover over "SUB SUB LIST"
     Then "Sub Sub item 1" should be "visible"
     And  "Sub Sub item 2" should be "visible"
+
 
   Scenario: Select Menu
     When I click "Select Menu option"

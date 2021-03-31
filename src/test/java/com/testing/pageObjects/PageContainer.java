@@ -17,6 +17,7 @@ public class PageContainer{
     pages = new HashMap<String, BasePage>();
 
     pages.put("BASE_PAGE", new BasePage());
+    pages.put("LINKS_PAGE", new LinksPage());
     pages.put("HOME_PAGE", new HomePage());
     pages.put("ELEMENTS_PAGE", new ElementsPage());
     pages.put("TEXT_BOX_PAGE", new TextBoxPage());
